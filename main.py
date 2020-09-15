@@ -20,7 +20,7 @@ def run():
   n = input("Enter an int: ")
   n= int(n)
   sum_n(n)
-  print(f"sum is {sum_n(n)}")
+  print(f"sum is {sum_n(n)}.")
   s = input("Enter a string: ")
   print_n(s, n)
 
