@@ -11,17 +11,19 @@ def sum_n(n):
 	return n + sum_n(n - 1)
 
 def print_n(s, n):
-  if len(s) == 0:
-    return s
-  return s + print_n(s, n-1) 
+  if n == 0:
+    return 
+  print(s)
+  print_n(s, n-1) 
 	
 def run():
-	n = int(input("Enter an int: "))
-	print(f"{sum_n(n)}")
-	
-	s = input("Enter a string: ")
-	print(f"{print_n(s, n)}")
-	
+  n = input("Enter an int: ")
+  n= int(n)
+  sum_n(n)
+  print(f"sum is {sum_n(n)}")
+  s = input("Enter a string: ")
+  print_n(s, n)
+
 if __name__ == "__main__":
 	run()
 	
